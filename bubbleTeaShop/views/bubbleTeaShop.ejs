@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleSheet.css">
+    <title>Bubble Tea Shop</title>
+</head>
+<body class="body">
+    <h1>Welcome to Our Bubble Tea Shop</h1>
+    <main>
+        <form name="BubbleTeaForm" method="Post"  action="" >
+            <h3>Personal Information</h3>
+            <table id="info">
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input name="name" type="text" placeholder="First Last"></td>       
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><input name="address" type="text" placeholder="address"></td>
+                </tr>
+                <tr>
+                    <td><label>City</label></td>
+                    <td><input name="city" type="text" placeholder="City"></td>
+                </tr>
+                <tr>
+                    <td><label>Province</label></td>
+                    <td>
+                        <select name="province">
+                            <option value="">---Select the province---</option>
+                            <option value="ON">ON</option>
+                            <option value="QC">QC</option>
+                            <option value="NS">NS</option>
+                            <option value="NB">NB</option>
+                            <option value="MB">MB</option>
+                            <option value="BC">BC</option>
+                            <option value="PE">PE</option>
+                            <option value="SK">SK</option>
+                            <option value="AB">AB</option>
+                            <option value="NL">NL</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Phone Number</label></td>
+                    <td><input name="phone" type="text" placeholder="xxxxxxxxxx"></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input name="email" type="text" placeholder="test@test.com"></td>
+                </tr>
+            </table><br>
+
+            <h3>Please choose what you want to buy</h3>
+            <table id="shop">
+                <tr>
+                    <td><label>Brown Sugar BBT: $7.65</label>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="radio" value="yes" name="brownSugar">Yes&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="radio" value="no" name="brownSugar">No</td>
+                </tr>
+                <tr>
+                    <td><label>Taro BBT: $6.50</label>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="radio" value="yes" name="taro">Yes&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="radio" value="no" name="taro">No</td>
+                </tr>
+                <tr>
+                    <td><label>Roasted Milk Tea: $7.50</label>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="radio" value="yes" name="roasted">Yes&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="radio" value="no" name="roasted">No</td>
+                </tr>
+            </table><br><br><br>
+
+            <input class="submit" type="submit" value="Check Out">
+        </form>
+    </main>
+
+    <aside>
+        <%
+        if(typeof(errors)!= 'undefined')  <!--means there are some errors-->
+        {
+            for(let error of errors)
+            {
+        %>
+        <p><%= error.msg %></p>
+        <%
+            }
+        }
+        %>
+        <%
+        if(typeof(total) != 'undefined')
+        {
+      %>
+        <h3>Thank you for your purchases!</h3><br><br>
+        <h3>Receipt</h3>
+        <table id="receipt">
+            <tr>
+                <th>Name</th>
+                <td><%= name %></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><%= address %></td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td><%= city %></td>
+            </tr>
+            <tr>
+                <th>Province</th>
+                <td><%= province %></td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td><%= phone %></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><%= email %></td>
+            </tr>    
+            <tr>
+                <th>Sub Total</th>
+                <td><%= subTotal.toFixed(2) %></td>
+            </tr>   
+            <tr>
+                <th>Tax</th>
+                <td><%= tax.toFixed(2) %></td>
+            </tr>  
+            <tr>
+                <th>Total</th>
+                <td><%= total.toFixed(2) %></td>
+            </tr>    
+        </table>
+        <%
+    }
+  %>
+    </aside>
+    <div class="clear"></div>   
+</body>
+</html>

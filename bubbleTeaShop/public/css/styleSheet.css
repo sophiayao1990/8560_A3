@@ -1,0 +1,77 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: darkorange;
+    text-shadow: white 2px 2px;
+}
+
+body{
+    background-color: lightpink;
+    width:950px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: cursive;
+}
+
+main{
+    float: left;
+    width: 40%;
+    background-color: darkorange;
+    border: 2px solid white;
+    box-shadow: 0 0 10px #2c2c2c;
+    padding: 30px;
+    margin: 50px auto;
+    color: white;
+    border-radius: 20px;
+}
+
+aside{
+    float:right;
+    width:40%;
+    background-color: darkorange;
+    border: 2px solid white;
+    box-shadow: 0 0 10px #2c2c2c;
+    padding: 30px;
+    margin: 50px auto;
+    color: white;
+    border-radius: 20px;
+
+}
+
+h3{
+    margin: 5px;
+}
+
+.submit{
+    width: 80%;
+    margin: auto 20px;
+    font-size: 22px;
+    background-color: #bc2990;
+    color: white;
+    font-family:cursive;
+    border: 0px;
+    padding: 10px;
+    height: 50px;
+    box-shadow: 2px 2px 0px white;
+    border-radius: 8px;
+}
+
+
+#info td{
+    border: none;
+    line-height: 30px;
+}
+
+#shop td{
+    border: none;
+    line-height: 40px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    line-height: 30px;
+  }
+
+.clear{
+    clear:both;
+}
