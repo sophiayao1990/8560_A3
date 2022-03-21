@@ -6,10 +6,16 @@ Enter your information and the bubble tea that you want to buy. We will generate
 ### Executing program
 
 * Step 1
-Run this code in your terminal
+Go to the bubbleTeaShop folder by typing the following code in Terminal
+```
+cd bubbleTeaShop
+```
+
+* Step 2
+Run this code in Terminal
 ```
 node index.js
 ```
 
 * Step 2
-open the link [@http://localhost:8000](http://localhost:8000) in your browser
+open the link [http://localhost:8000](http://localhost:8000) in your browser
