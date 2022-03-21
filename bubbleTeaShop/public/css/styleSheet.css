@@ -6,7 +6,7 @@ h1{
 }
 
 body{
-    background-color: lightpink;
+    background-color: lightgray;
     width:950px;
     margin: 20px auto;
     padding: 20px;
@@ -16,7 +16,7 @@ body{
 main{
     float: left;
     width: 40%;
-    background-color: darkorange;
+    background-color: palevioletred;
     border: 2px solid white;
     box-shadow: 0 0 10px #2c2c2c;
     padding: 30px;
@@ -28,7 +28,7 @@ main{
 aside{
     float:right;
     width:40%;
-    background-color: darkorange;
+    background-color: palevioletred;
     border: 2px solid white;
     box-shadow: 0 0 10px #2c2c2c;
     padding: 30px;
