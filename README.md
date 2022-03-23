@@ -9,8 +9,12 @@ Enter your information and the bubble tea that you want to buy. We will generate
 git clone https://github.com/sophiayao1990/8560_A3.git
 ```
 
-* Step 2: Install node.js and npm if needed
-Follow the [wiki](https://github.com/sophiayao1990/8560_A3/wiki/How-to-install-node.js-and-npm) to install node.js and npm
+* Step 2: Run the following commands to check if node.js and npm are installed. If not, follow the [wiki](https://github.com/sophiayao1990/8560_A3/wiki/How-to-install-node.js-and-npm) to install node.js and npm. 
+
+```
+node -v
+npm -v
+```
 
 * Step 3: 
 Go to the bubbleTeaShop folder by typing the code in Terminal:
