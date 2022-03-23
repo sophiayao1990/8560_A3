@@ -4,6 +4,10 @@ Enter your information and the bubble tea that you want to buy. We will generate
 
 
 ### Executing program
+* Step 0: Clone this repository by running
+```
+git clone https://github.com/sophiayao1990/8560_A3.git
+```
 
 * Step 1: 
 Go to the bubbleTeaShop folder by typing the code in Terminal:
